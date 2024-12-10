@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .results {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Brainstormer</h1>
+        <h6>by JF</h6>
+        <p>Sube un archivo de audio para transcribirlo y analizarlo:</p>
+        <form id="upload-form">
+            <input type="file" id="audio-file" accept="audio/*" required />
+            <br />
+            <button type="submit">Subir y procesar</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
